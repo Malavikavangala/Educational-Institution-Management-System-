@@ -1,0 +1,61 @@
+INSERT INTO Departments (department_id, department_name)
+VALUES
+    (1, 'Computer Science'),
+    (2, 'Mathematics'),
+    (3, 'Physics'),
+    (4, 'Chemistry'),
+    (5, 'Biology');
+INSERT INTO Instructors (instructor_id, instructor_name, department_id)
+VALUES
+    (1, 'Dr. Smith', 1),
+    (2, 'Dr. Johnson', 2),
+    (3, 'Dr. Brown', 3),
+    (4, 'Dr. Davis', 4),
+    (5, 'Dr. Wilson', 5);
+INSERT INTO Courses (course_id, course_name, instructor_id, department_id)
+VALUES
+    (1, 'Introduction to Programming', 1, 1),
+    (2, 'Calculus I', 2, 2),
+    (3, 'General Physics', 3, 3),
+    (4, 'Organic Chemistry', 4, 4),
+    (5, 'Cell Biology', 5, 5),
+    (6, 'Data Structures', 1, 1),
+    (7, 'Linear Algebra', 2, 2),
+    (8, 'Quantum Mechanics', 3, 3),
+    (9, 'Physical Chemistry', 4, 4),
+    (10, 'Genetics', 5, 5);
+INSERT INTO Students (student_id, student_name, email, phone)
+VALUES
+    (1, 'Alice Smith', 'alice.smith@student.edu', '111-222-3333'),
+    (2, 'Bob Johnson', 'bob.johnson@student.edu', '222-333-4444'),
+    (3, 'Charlie Brown', 'charlie.brown@student.edu', '333-444-5555'),
+    (4, 'Diana Lee', 'diana.lee@student.edu', '444-555-6666'),
+    (5, 'Eve Adams', 'eve.adams@student.edu', '555-666-7777'),
+    (6, 'Frank Davis', 'frank.davis@student.edu', '666-777-8888'),
+    (7, 'Grace Moore', 'grace.moore@student.edu', '777-888-9999'),
+    (8, 'Henry White', 'henry.white@student.edu', '888-999-0000'),
+    (9, 'Ivy King', 'ivy.king@student.edu', '999-000-1111'),
+    (10, 'Jack Robinson', 'jack.robinson@student.edu', '000-111-2222');
+INSERT INTO Enrollments (enrollment_id, student_id, course_id, enrollment_date, grade)
+VALUES
+    (1, 1, 1, '2024-01-15', 'A'),
+    (2, 2, 1, '2024-01-16', 'B'),
+    (3, 3, 2, '2024-01-17', 'A-'),
+    (4, 4, 2, '2024-01-18', 'B+'),
+    (5, 5, 3, '2024-01-19', 'A'),
+    (6, 6, 3, '2024-01-20', 'B-'),
+    (7, 7, 4, '2024-01-21', 'A+'),
+    (8, 8, 4, '2024-01-22', 'B'),
+    (9, 9, 5, '2024-01-23', 'A'),
+    (10, 10, 5, '2024-01-24', 'A-'),
+    (11, 1, 6, '2024-01-25', 'B+'),
+    (12, 2, 6, '2024-01-26', 'A-'),
+    (13, 3, 7, '2024-01-27', 'B'),
+    (14, 4, 7, '2024-01-28', 'A'),
+    (15, 5, 8, '2024-01-29', 'A-'),
+    (16, 6, 8, '2024-01-30', 'B+'),
+    (17, 7, 9, '2024-01-31', 'A'),
+    (18, 8, 9, '2024-02-01', 'A-'),
+    (19, 9, 10, '2024-02-02', 'B'),
+    (20, 10, 10, '2024-02-03', 'A+');
+
